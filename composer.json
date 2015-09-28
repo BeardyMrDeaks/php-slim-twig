@@ -1,0 +1,16 @@
+{
+    "name": "ubuntu/workspace",
+    "authors": [
+        {
+            "name": "Sam Deacon",
+            "email": "deaconsam10@gmail.com"
+        }
+    ],
+    "require": {
+        "monolog/monolog": "^1.17",
+        "slim/slim": "^2.6",
+        "twig/twig": "^1.22",
+        "slim/slim-skeleton": "^2.1",
+        "swiftmailer/swiftmailer": "^5.4"
+    }
+}
