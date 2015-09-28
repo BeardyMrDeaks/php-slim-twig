@@ -57,6 +57,16 @@ $app->post('/contact', function() use ($app){
     $transport = Swift_SendmailTransport::newInstance('/usr/sbin/sendmail');
     $mailer = \Swift_Mailer::newInstance($transport);
     
+    $message = \Swift_Message::newInstance();
+    $message->setSubject('Email from our website');
+    $message->setFrom(array(
+        $cleanName => $cleanEmail
+    ));
+    $message->setTo(array(''));
+    $message->setSubject('Email from our website');
+    
+    
+    
 });
 
 $app->run();
